@@ -227,7 +227,7 @@
                         Gereja GUPDI Tulungagung
                     </p>
                     <p className="text-gray-600 mb-3 text-sm sm:text-base">
-                        Jl. Tentara Pelajar, Tulungagung, Jawa Timur
+                        Jl. Panglima Sudirman No.102, Kepatihan, Kampungdalem, Kec. Tulungagung, Kabupaten Tulungagung, Jawa Timur 66212
                     </p>
                     </div>
                     

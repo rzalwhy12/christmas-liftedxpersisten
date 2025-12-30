@@ -1,0 +1,123 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient effect with red and green -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#065f46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#15803d;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="lightGlow" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Main background -->
+  <rect width="800" height="1000" fill="url(#bgGradient)"/>
+  <rect width="800" height="1000" fill="url(#lightGlow)"/>
+  
+  <!-- Decorative snowflakes top left -->
+  <g transform="translate(60, 80)" opacity="0.6">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <line x1="0" y1="-25" x2="0" y2="25" stroke="#fbbf24" stroke-width="2"/>
+    <line x1="-25" y1="0" x2="25" y2="0" stroke="#fbbf24" stroke-width="2"/>
+    <line x1="-18" y1="-18" x2="18" y2="18" stroke="#fbbf24" stroke-width="2"/>
+    <line x1="-18" y1="18" x2="18" y2="-18" stroke="#fbbf24" stroke-width="2"/>
+  </g>
+  
+  <!-- Decorative snowflakes top right -->
+  <g transform="translate(740, 120)" opacity="0.6">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="#fbbf24" stroke-width="1.5"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#fbbf24" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Holly decorations left side -->
+  <g transform="translate(50, 300)">
+    <ellipse cx="0" cy="0" rx="8" ry="14" fill="#10b981" transform="rotate(-30)"/>
+    <ellipse cx="6" cy="10" rx="8" ry="14" fill="#059669" transform="rotate(20)"/>
+    <ellipse cx="-6" cy="10" rx="8" ry="14" fill="#10b981" transform="rotate(-50)"/>
+    <circle cx="0" cy="3" r="4" fill="#ef4444"/>
+    <circle cx="5" cy="8" r="3" fill="#dc2626"/>
+    <circle cx="-5" cy="8" r="3" fill="#ef4444"/>
+  </g>
+  
+  <!-- Holly decorations right side -->
+  <g transform="translate(750, 350)">
+    <ellipse cx="0" cy="0" rx="8" ry="14" fill="#10b981" transform="rotate(30)"/>
+    <ellipse cx="-6" cy="10" rx="8" ry="14" fill="#059669" transform="rotate(-20)"/>
+    <ellipse cx="6" cy="10" rx="8" ry="14" fill="#10b981" transform="rotate(50)"/>
+    <circle cx="0" cy="3" r="4" fill="#ef4444"/>
+    <circle cx="-5" cy="8" r="3" fill="#dc2626"/>
+    <circle cx="5" cy="8" r="3" fill="#ef4444"/>
+  </g>
+  
+  <!-- Main content area - white rounded box -->
+  <rect x="40" y="180" width="720" height="650" rx="30" fill="white" opacity="0.95"/>
+  
+  <!-- Ornament decoration top center -->
+  <g transform="translate(400, 140)">
+    <circle cx="0" cy="0" r="35" fill="#dc2626" stroke="#fbbf24" stroke-width="3"/>
+    <ellipse cx="0" cy="-38" rx="12" ry="8" fill="#15803d"/>
+    <circle cx="-8" cy="-28" r="3" fill="#fbbf24"/>
+    <circle cx="8" cy="-28" r="3" fill="#fbbf24"/>
+    <circle cx="0" cy="-25" r="4" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="400" y="270" font-size="72" font-weight="bold" text-anchor="middle" fill="#dc2626" font-family="Georgia, serif">
+    UNDANGAN
+  </text>
+  <text x="400" y="330" font-size="48" font-weight="bold" text-anchor="middle" fill="#065f46" font-family="Georgia, serif">
+    PERAYAAN NATAL
+  </text>
+  
+  <!-- Decorative line -->
+  <line x1="100" y1="360" x2="700" y2="360" stroke="#fbbf24" stroke-width="3"/>
+  
+  <!-- Event details -->
+  <text x="400" y="430" font-size="24" font-weight="600" text-anchor="middle" fill="#065f46" font-family="Arial, sans-serif">
+    Kami mengundang Anda untuk merayakan
+  </text>
+  <text x="400" y="470" font-size="28" font-weight="bold" text-anchor="middle" fill="#dc2626" font-family="Arial, sans-serif">
+    Natal Bersama
+  </text>
+  
+  <!-- Location icon and text -->
+  <g transform="translate(80, 520)">
+    <circle cx="0" cy="0" r="8" fill="#dc2626"/>
+    <path d="M 0 8 Q -15 25 -15 40 Q 0 50 15 40 Q 15 25 0 8" fill="#dc2626" opacity="0.7"/>
+  </g>
+  <text x="120" y="530" font-size="20" font-weight="600" fill="#065f46" font-family="Arial, sans-serif">
+    Gereja GUPDI Tulungagung
+  </text>
+  <text x="120" y="560" font-size="18" fill="#15803d" font-family="Arial, sans-serif">
+    Tulungagung, Jawa Timur
+  </text>
+  
+  <!-- Date icon -->
+  <g transform="translate(80, 610)">
+    <rect x="0" y="0" width="16" height="16" rx="2" fill="#059669"/>
+    <line x1="4" y1="4" x2="12" y2="4" stroke="white" stroke-width="1"/>
+    <line x1="4" y1="8" x2="12" y2="8" stroke="white" stroke-width="1"/>
+  </g>
+  <text x="120" y="620" font-size="20" font-weight="600" fill="#065f46" font-family="Arial, sans-serif">
+    25 Desember
+  </text>
+  
+  <!-- Footer text -->
+  <text x="400" y="750" font-size="16" text-anchor="middle" fill="#666666" font-family="Arial, sans-serif" font-style="italic">
+    "Pernikahan Kristus adalah bukti kasih Allah"
+  </text>
+  
+  <!-- Decorative stars bottom -->
+  <g transform="translate(150, 850)" opacity="0.8">
+    <polygon points="0,-8 2.4,-2.4 8,-0.8 3.2,3.2 4.8,9.2 0,5.6 -4.8,9.2 -3.2,3.2 -8,-0.8 -2.4,-2.4" fill="#fbbf24"/>
+  </g>
+  <g transform="translate(650, 880)" opacity="0.8">
+    <polygon points="0,-8 2.4,-2.4 8,-0.8 3.2,3.2 4.8,9.2 0,5.6 -4.8,9.2 -3.2,3.2 -8,-0.8 -2.4,-2.4" fill="#fbbf24"/>
+  </g>
+  <g transform="translate(400, 920)" opacity="0.8">
+    <polygon points="0,-8 2.4,-2.4 8,-0.8 3.2,3.2 4.8,9.2 0,5.6 -4.8,9.2 -3.2,3.2 -8,-0.8 -2.4,-2.4" fill="#fbbf24"/>
+  </g>
+</svg>

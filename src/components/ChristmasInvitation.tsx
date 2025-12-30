@@ -17,7 +17,7 @@
     const [guests, setGuests] = useState<any[]>([]);
 
     const copyToClipboard = () => {
-        navigator.clipboard.writeText('Gupdi Tulungagung, Jl. Tentara Pelajar, Tulungagung');
+        navigator.clipboard.writeText('Jl. Panglima Sudirman No.102, Kepatihan, Kampungdalem, Kec. Tulungagung, Kabupaten Tulungagung, Jawa Timur 66212');
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };

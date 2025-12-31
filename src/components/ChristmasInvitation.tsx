@@ -11,6 +11,8 @@
     const [copied, setCopied] = useState(false);
     const [guestName, setGuestName] = useState('');
     const [school, setSchool] = useState('');
+    const [church, setChurch] = useState('');
+    const [phone, setPhone] = useState('');
     const [christmasMessage, setChristmasMessage] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [message, setMessage] = useState('');
@@ -70,8 +72,8 @@
     };
 
     const handleConfirmAttendance = async () => {
-        if (!guestName.trim() || !school.trim()) {
-            setMessage('Silakan masukkan nama dan asal sekolah terlebih dahulu');
+        if (!guestName.trim() || !school.trim() || !church.trim() || !phone.trim()) {
+            setMessage('Silakan masukkan semua data (nama, sekolah, gereja, dan nomor HP)');
             return;
         }
 
@@ -89,6 +91,8 @@
                 body: JSON.stringify({
                     name: guestName,
                     school: school,
+                    church: church,
+                    phone: phone,
                     christmasMessage: christmasMessage || 'Tidak ada pesan',
                     confirmedAt: new Date().toISOString(),
                     status: 'confirmed'
@@ -99,6 +103,8 @@
                 setMessage(`Terima kasih ${guestName}! Kehadiran Anda telah terdaftar. 🎄`);
                 setGuestName('');
                 setSchool('');
+                setChurch('');
+                setPhone('');
                 setChristmasMessage('');
                 fetchGuests();
                 setTimeout(() => setMessage(''), 3000);
@@ -146,6 +152,20 @@
                     placeholder="Asal Sekolah..." 
                     value={school}
                     onChange={(e) => setSchool(e.target.value)}
+                    className="bg-white/90 text-gray-800 font-semibold px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow text-center placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full max-w-xs text-sm"
+                />
+                <input 
+                    type="text" 
+                    placeholder="Asal Gereja..." 
+                    value={church}
+                    onChange={(e) => setChurch(e.target.value)}
+                    className="bg-white/90 text-gray-800 font-semibold px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow text-center placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full max-w-xs text-sm"
+                />
+                <input 
+                    type="tel" 
+                    placeholder="Nomor WhatsApp..." 
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                     className="bg-white/90 text-gray-800 font-semibold px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg shadow text-center placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 w-full max-w-xs text-sm"
                 />
                 <textarea 
